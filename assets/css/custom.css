@@ -243,9 +243,7 @@ div#myNavbar li {
 #hero {
     padding: 75px 20%;
     text-align: center;
-    /*background: url('../images/cannabis_stem.jpg') 10% 0 repeat fixed;*/
     background: url('http://www.cannabishealing.co.za/wp-content/uploads/2018/10/homepageimage.jpg') 10% 0 repeat fixed;
-    
     color: #fff;
     background-size: cover;
 }
@@ -573,9 +571,15 @@ ul.footer-icons {
 }
 
 /* nuwe site round 2*/
+#product-taxonomy-page .product_category_instance {
+    min-height: 410px;
+}
 .price {
     font-size: 20px !important;
     font-weight: bold;
+}
+.product_category_instance .price {
+    text-align: center;
 }
 .navbar-right li a{
     padding-left: 10px;
@@ -623,7 +627,7 @@ ul.footer-icons {
     padding-top: 20px;
 }
 .breadcumbs {
-    padding-top: 10px;
+    padding-top: 30px;
     padding-bottom: 30px;
     text-transform: uppercase;
 }
@@ -632,9 +636,6 @@ ul.footer-icons {
 }
 .breadcumbs a{
     color: #40826d;
-}
-.product_taxonomy_page .row{
-    padding-top: 25px;
 }
 .container-products img {
     max-width: 100%;

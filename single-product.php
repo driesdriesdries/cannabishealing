@@ -5,7 +5,7 @@ get_header(); ?>
   get_template_part ('template-parts/content-modal', get_post_format());
 ?>
 
-	<div class="container" style="padding-top: 30px;">
+	<div class="container">
 		<div class="row">
 			<div class="col-sm-12 breadcumbs">
 				<a href="<?php echo site_url(); ?>">HOME</a> > 
