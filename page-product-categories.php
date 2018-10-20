@@ -14,10 +14,10 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
+	<div id="product-category-page" class="content-area">
 		<main id="main" class="site-main" role="main">
 			
-			<div class="container product_taxonomy_page">
+			<div class="container">
 				<div class="row">
 					<div class="col-sm-12 breadcumbs">
 						<a href="<?php echo site_url(); ?>">HOME</a> > 
