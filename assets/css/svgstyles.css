@@ -1,0 +1,120 @@
+/*SVG ANIMATION SPECIFIC STYLING*/
+
+
+
+svg path {
+  stroke: white;
+}
+
+svg path.outer_circles-1 {
+  stroke: white;
+  stroke-dasharray:300;
+  stroke-dashoffset:300;
+  animation: 3s outline 1 forwards;
+}
+svg path.outer_circles-2 {
+  stroke: white;
+  stroke-dasharray:300;
+  stroke-dashoffset:300;
+  animation: 3s outline 1 forwards;
+  animation-delay: 0.2s;
+}
+svg path.outer_circles-3 {
+  stroke: white;
+  stroke-dasharray:300;
+  stroke-dashoffset:300;
+  animation: 3s outline 1 forwards;
+  animation-delay: 0.4s;
+}
+svg path.outer_circles-4 {
+  stroke: white;
+  stroke-dasharray:300;
+  stroke-dashoffset:300;
+  animation: 3s outline 1 forwards;
+  animation-delay: 0.6s;
+}
+svg path.outer_circles-5 {
+  stroke: white;
+  stroke-dasharray:300;
+  stroke-dashoffset:300;
+  animation: 3s outline 1 forwards;
+  animation-delay: 0.8s;
+}
+svg path.outer_circles-6 {
+  stroke: white;
+  stroke-dasharray:300;
+  stroke-dashoffset:300;
+  animation: 3s outline 1 forwards;
+  animation-delay: 1s;
+}
+
+svg path.mid_circle {
+  stroke: white;
+  fill: white;
+  animation: 4s fade_mid infinite;
+  animation-direction: alternate;
+  animation-delay: 2.8s;
+  opacity:0;  
+}
+svg path.letters {
+  fill: white;
+  opacity:0;
+  animation: 1s fade 1 forwards;
+  animation-delay: 3s;
+}
+
+svg {
+  width: 500px;
+  height: 200px;
+}
+
+div.header_animate {
+  opacity:0;
+  animation: 2s fade 1 forwards;
+  animation-delay: 3.5s;
+}
+
+@keyframes outline{
+  from {
+    stroke-dashoffset:300;
+  } to {
+    stroke-dashoffset:0;
+  }
+  
+}
+
+@keyframes fade{
+   from {
+    opacity:0;
+  } to {
+    opacity:1;
+  }
+  
+}
+
+@keyframes fade_mid {
+    0%   {opacity: 0;}
+    100% {opacity: 1;}
+  
+}
+
+
+@keyframes fade_header{
+   from {
+    opacity:0;
+  } to {
+    opacity:1;
+  }
+  
+}
+
+@media (max-width: 782px) {
+ 
+  svg {
+    width: 300px;   
+  }
+  h1#taglinetext {  
+    margin-top: -7px;
+  }
+
+}

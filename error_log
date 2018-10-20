@@ -1,0 +1,1 @@
+[07-May-2018 03:44:43 UTC] PHP Fatal error:  Call to undefined function get_header() in /home/cannabish/public_html/wp-content/themes/cannabishealing/404.php on line 10
