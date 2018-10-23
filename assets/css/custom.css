@@ -310,6 +310,7 @@ blockquote {
 div.prepare {
     
     padding:20px; 
+    margin-bottom: 20px;
     color: #000000;
     color: white;
     /*background: url('../images/banners/header_image.jpg');*/
@@ -571,6 +572,31 @@ ul.footer-icons {
 }
 
 /* nuwe site round 2*/
+.carousel-inner blockquote p {
+    padding-top:50px;
+    padding-bottom:50px;
+}
+.carousel-control.left, .carousel-control.right {
+    background-image: none;
+}
+#myCarousel {
+    background-color: #40826d;
+    color: white;
+}
+.prepare .heading h3 {
+    margin-bottom: 40px;
+}
+.card_header {
+    height: 220px;
+    border:2px solid #40826d;
+    border-radius: 15px;
+}
+.card_header:hover {
+    cursor: pointer;
+}
+.card_footer h3 {
+    font-size: 16px;
+}
 #product-taxonomy-page .product_category_instance {
     min-height: 410px;
 }

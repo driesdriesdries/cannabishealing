@@ -36,7 +36,7 @@ get_header(); ?>
   </div>
 </div>
 
-<div class="hr-arrow" style="margin-top:40px;">
+<div class="hr-arrow" style="margin-top:60px;">
 	<img class="scrollToTop" src="<?php bloginfo('template_directory'); ?>/assets/images/up-arrow-red.jpg" width="40px" alt="up arrow image">
 	<p id="btt">back to top</p>
 </div>
