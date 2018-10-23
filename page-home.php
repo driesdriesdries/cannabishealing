@@ -179,30 +179,78 @@ get_header(); ?>
     </div>
   </div>
 
+  
 
-  
-<div class="container"><!--Container Opens-->
-  
-  <!--Tagline-->  
-  <div id="tagline" class="row">
-    <div class="col-sm-12">
-      <blockquote ><i>"<?php echo $testimonial; ?>"<br>-<?php echo $testimonee; ?></i></blockquote>
+  <!--Testimonial Section-->  
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active text-center">
+      <blockquote>
+        <p>"Sed ut perspiciatis unde omnis iste natus error"<br/>Andries Gericke</p>
+      </blockquote>
+    </div>
+
+    <div class="item text-center">
+      <blockquote>
+        <p>"nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum"<br/>Frodo Baggins</p>
+      </blockquote>
+    </div>
+
+    <div class="item text-center">
+      <blockquote>
+        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do"<br/>Anneke Viljee</p>
+      </blockquote>
     </div>
   </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+  <!-- Testimonials Ends -->
 
   <div id="prepare_section" class="prepare">
     <div class="row">
-      <div class="col-sm-8"><h3><?php echo $heading; ?></h3>
-    <p><?php echo $description; ?></p>
-    <p></p>
+      <div class="col-sm-12 text-center heading">
+        <h3>Latest Articles</h3>
       </div>
-    <div class="col-sm-4">
-		<img src="<?php bloginfo('template_directory'); ?>/assets/images/cannabisoil.jpg" width="100%" alt="an image of cannabis oil">
+      <?php
+
+      $home_page_query = new WP_query(array(
+        'posts_per_page' => '4'
+      ));
+
+      while($home_page_query->have_posts()){
+        $home_page_query->the_post(); ?>
+        <div class="col-md-3 col-sm-6" onclick="window.location.href='<?php echo the_permalink(); ?>' ">
+          <?php 
+              $image = get_the_post_thumbnail_url();
+            ?>
+          <div class="card_header" style="background:url('<?php print_r($image); ?>'); background-size: cover; background-position: center;">
+          </div>
+          <div class="card_footer">
+            <h3><a href="<?php echo get_the_permalink(); ?>"><?php echo the_title();?></a></h3>
+          </div>
+        </div>
+      <?php }
+
+      ?>
     </div>
-    </div>
-    
-    <hr>
   </div>
+
 </div><!--Close Container-->
 
   <!--In 16 weeks section-->

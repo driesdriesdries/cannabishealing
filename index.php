@@ -48,27 +48,6 @@ get_header(); ?>
 						?>
 						<div class="col-md-4 col-sm-6 blog_block">
 							<h2 class="blog_heading"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-							<!-- <p class="post-info">
-							    <?php the_time('F jS, Y'); ?> | 
-							    
-							    Posted in 
-
-							    <?php 
-							      $categories = get_the_category(); 
-							      $separator = ", ";
-							      $output = "";
-
-							      if ($categories) {
-							        foreach ($categories as $category) {
-							          $output .= '<a href="' . get_category_link($category->term_id) .'">' .$category->cat_name .'</a>' . $separator;
-
-							        }
-							        echo trim($output, $separator);
-
-							      }
-
-							    ?>
-							</p> -->
 							<?php  
 								// check if the post has a Post Thumbnail assigned to it.
 								if ( has_post_thumbnail() ) { ?>
@@ -80,32 +59,26 @@ get_header(); ?>
 									<?php 
 								}
 							?>
-							<p>
 							</br>
-							  <?php echo get_the_excerpt(); ?>
-							  <a href="<?php the_permalink(); ?>">Readmore &raquo;</a>
-							</p>
-							
-							
-							
-							</div>
-							<?php
-					endwhile;
-
-					?>
-					<div class="row">
-						<div class="col-sm-12 pagination_area">
-							<?php  wp_numeric_posts_nav(); ?>
+						 	<?php echo get_the_excerpt(); ?>
+							<a href="<?php the_permalink(); ?>">Readmore &raquo;</a>
 						</div>
-					</div>
 
+						<?php endwhile; ?>
+
+						<div class="row">
+							<div class="col-sm-12 pagination_area">
+								<?php  wp_numeric_posts_nav(); ?>
+							</div>
+						</div>
 					<?php 
 
 				else :
 
 					get_template_part( 'template-parts/content', 'none' );
 
-				endif; ?>
+				endif;
+			?>
 			</div>	
 		</div><!--Blog-->
 	</div><!--Close Container-->
