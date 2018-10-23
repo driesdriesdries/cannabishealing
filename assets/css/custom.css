@@ -241,7 +241,7 @@ div#myNavbar li {
 /*Hero Section*/
 
 #hero {
-    padding: 75px 20%;
+    padding: 25px 20%;
     text-align: center;
     background: url('http://www.cannabishealing.co.za/wp-content/uploads/2018/10/homepageimage.jpg') 10% 0 repeat fixed;
     color: #fff;
@@ -572,9 +572,12 @@ ul.footer-icons {
 }
 
 /* nuwe site round 2*/
+.carousel-inner blockquote {
+    border-left: 0px;
+}
 .carousel-inner blockquote p {
-    padding-top:50px;
-    padding-bottom:50px;
+    padding-top:20px;
+    padding-bottom:30px;
 }
 .carousel-control.left, .carousel-control.right {
     background-image: none;

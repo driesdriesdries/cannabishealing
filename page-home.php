@@ -179,10 +179,8 @@ get_header(); ?>
     </div>
   </div>
 
+  
 
-  
-<div class="container"><!--Container Opens-->
-  
   <!--Testimonial Section-->  
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
@@ -191,24 +189,23 @@ get_header(); ?>
     <li data-target="#myCarousel" data-slide-to="1"></li>
     <li data-target="#myCarousel" data-slide-to="2"></li>
   </ol>
-
   <!-- Wrapper for slides -->
   <div class="carousel-inner">
     <div class="item active text-center">
       <blockquote>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+        <p>"Sed ut perspiciatis unde omnis iste natus error"<br/>Andries Gericke</p>
       </blockquote>
     </div>
 
     <div class="item text-center">
       <blockquote>
-        <p>Hierdie is amazing</p>
+        <p>"nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum"<br/>Frodo Baggins</p>
       </blockquote>
     </div>
 
     <div class="item text-center">
       <blockquote>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do"<br/>Anneke Viljee</p>
       </blockquote>
     </div>
   </div>
